@@ -1,31 +1,21 @@
-// ══════════════════════════════════════════════════
-//  FIREBASE CONFIG
-//  Yahan apni Firebase config paste karein
-//  firebase.google.com → Project Settings → Web App
-// ══════════════════════════════════════════════════
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, onSnapshot, query, orderBy, serverTimestamp } from "firebase/firestore";
+import { getFirestore, collection, addDoc, doc, updateDoc, onSnapshot, query, orderBy, serverTimestamp } from "firebase/firestore";
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 
-// 👇 APNI CONFIG YAHAN PASTE KAREIN
+// ✅ AAPKI FIREBASE CONFIG
 const firebaseConfig = {
-  apiKey: "AIzaSy...",
-  authDomain: "police-cms-xxx.firebaseapp.com",
-  projectId: "police-cms-xxx",
-  storageBucket: "police-cms-xxx.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456:web:abcdef"
-};
-
-
-
+  apiKey:            "AIzaSyBxhPpB-O8TKSKYWRhJZT581p-9rIUvih0",
+  authDomain:        "police-cms-chakarnagar.firebaseapp.com",
+  projectId:         "police-cms-chakarnagar",
+  storageBucket:     "police-cms-chakarnagar.firebasestorage.app",
+  messagingSenderId: "10434870185555",
+  appId:             "1:10434870185555:web:e0d3f08f8a9714b58c161e"
 };
 
 const app = initializeApp(firebaseConfig);
 export const db   = getFirestore(app);
 export const auth = getAuth(app);
 
-// ── Complaints ──────────────────────────────────
 export const complaintsRef = () => collection(db, "complaints");
 
 export async function addComplaint(data) {
@@ -55,7 +45,6 @@ export function listenComplaints(callback) {
   });
 }
 
-// ── Auth ─────────────────────────────────────────
 export async function adminLogin(email, password) {
   return await signInWithEmailAndPassword(auth, email, password);
 }

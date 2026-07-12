@@ -5,7 +5,7 @@ import { db, addComplaint, updateComplaint, listenComplaints, adminLogin, adminL
 const THANA       = "थाना चकरनगर";
 const DIST        = "एटावा, उ.प्र.";
 const THANA_PHONE = "05688-222001";
-const ADMIN_EMAIL = "admin@chakarnagar.police.up";  // Firebase Auth email
+const ADMIN_EMAIL = "admin@police-cms-chakarnagar.firebaseapp.com";  // Firebase Auth email
 
 const OFFICERS = [
   {id:"O1",name:"SI Ramesh Kumar",   rank:"Sub Inspector",  beat:"Beat-1",phone:"9801234567",active:true,  av:"👮"},
