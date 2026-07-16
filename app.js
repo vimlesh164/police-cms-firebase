@@ -603,7 +603,7 @@ function buildSidebar() {
   const shaktiSections = [
     { id: 'safety', label: currentLang === 'hi' ? 'सुरक्षा और आपातकाल' : 'Safety & Emergency', icon: '🌸', bg: '#fff0f6', count: '6 services', desc: currentLang === 'hi' ? 'SOS, हेल्पलाइन, FIR' : 'SOS, Helplines, FIR' },
     { id: 'support', label: currentLang === 'hi' ? 'सहायता और कानूनी' : 'Support & Legal', icon: '💬', bg: '#f3f0ff', count: '4 services', desc: currentLang === 'hi' ? 'काउंसलिंग, कानूनी सहायता' : 'Counselling, Legal Aid' },
-    { id: 'welfare', label: currentLang === 'hi' ? 'कल्याण योजनाएं' : 'Welfare Schemes', icon: '🎀', bg: '#fff0f6', count: '4 services', desc: currentLang === 'hi' ? 'सरकारी लाभ, पेंशन' : 'Gov Benefits, Pension' }
+    { id: 'welfare', label: currentLang === 'hi' ? 'कल्याण योजनाएं' : 'Welfare Schemes', icon: '🎀', bg: '#fff0f6', count: '5 services', desc: currentLang === 'hi' ? 'सरकारी लाभ, पेंशन' : 'Gov Benefits, Pension' }
   ];
   const policeSections = [
     { id: 'police_services', label: currentLang === 'hi' ? 'पुलिस सेवाएं' : 'Police Services', icon: '👮', bg: '#eef2ff', count: '10 services', desc: currentLang === 'hi' ? 'FIR, शिकायत, सत्यापन' : 'FIR, Complaint, Verify' }
@@ -706,7 +706,8 @@ function buildContent() {
         { name: 'Kanya Sumangala Yojana', tag: 'Financial Aid', desc: 'Direct benefit transfer for girl child education & health.', url: 'https://mksy.up.gov.in', target: '_blank', icon: '👶' },
         { name: 'Shadi Anudan Yojana', tag: 'Marriage Grant', desc: 'Financial assistance for marriages of daughters from poor families.', url: 'https://shadianudan.upsdc.gov.in', target: '_blank', icon: '💍' },
         { name: 'Vidhwa Pension Scheme', tag: 'Widow Pension', desc: 'Social security and pension for destitute widows in UP.', url: 'https://sspy-up.gov.in', target: '_blank', icon: '👵' },
-        { name: 'Sakhi One Stop Centre', tag: 'Support Centre', desc: 'Integrated support services for women affected by violence.', url: 'https://missionshakti.up.gov.in', target: '_blank', icon: '🏢' }
+        { name: 'Rani Laxmi Bai Mahila Evam Bal Samman Kosh', tag: 'Financial Help', desc: 'Financial aid for women & children in distress — education, marriage & medical support.', url: 'https://msk.upsdc.gov.in/financialhelp/Default.aspx?help=Edu', target: '_blank', icon: '🏅' },
+        { name: 'UP Scholarship Scheme', tag: 'Education Aid', desc: 'Pre & post matric scholarships for students of all categories across UP.', url: 'https://scholarship.up.gov.in/', target: '_blank', icon: '🎓' }
       ]
     }
   ] : [
